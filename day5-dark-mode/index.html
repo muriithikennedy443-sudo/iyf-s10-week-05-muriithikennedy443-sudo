@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 5 - Dark Mode</title>
+  <style>
+    * { transition: all 0.3s ease; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #333333;
+      padding: 40px;
+    }
+
+    body.dark {
+      background: #1a1a2e;
+      color: #eee;
+    }
+
+    #toggle-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      background: #333;
+      color: white;
+    }
+
+    body.dark #toggle-btn {
+      background: #eee;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dark Mode Toggle</h1>
+  <p>This page supports dark mode. Click the button to switch!</p>
+  <br>
+  <button id="toggle-btn">🌙 Switch to Dark Mode</button>
+  <script src="app.js"></script>
+</body>
+</html>

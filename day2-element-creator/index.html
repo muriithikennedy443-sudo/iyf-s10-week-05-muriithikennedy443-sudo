@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 2 - Element Creator</title>
+  <style>
+    .paragraph-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin: 5px 0;
+      background: #f0f0f0;
+      border-radius: 4px;
+    }
+    .delete-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 4px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button#add-btn {
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Element Creator</h1>
+  <button id="add-btn">Add Paragraph</button>
+  <div id="container"></div>
+  <script src="app.js"></script>
+</body>
+</html>
