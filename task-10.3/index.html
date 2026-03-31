@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 10.3</title>
+  <style>
+    #grandparent {
+      padding: 40px;
+      background: #f0a500;
+    }
+    #parent {
+      padding: 30px;
+      background: #3498db;
+    }
+    #child {
+      padding: 20px;
+      background: #2ecc71;
+      cursor: pointer;
+    }
+    ul { list-style: none; padding: 20px; }
+    li {
+      padding: 10px;
+      margin: 5px;
+      background: #eee;
+      cursor: pointer;
+    }
+    .completed {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+    .delete-btn {
+      float: right;
+      background: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 2px 8px;
+    }
+    input { padding: 8px; margin: 10px; }
+    button { padding: 8px 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <!-- Exercise 1: Bubbling -->
+  <div id="grandparent">
+    Grandparent
+    <div id="parent">
+      Parent
+      <div id="child">
+        Child
+      </div>
+    </div>
+  </div>
+
+  <!-- Exercise 2 + Build: Task List -->
+  <h2>Task List</h2>
+  <input type="text" id="task-input" placeholder="Add new task...">
+  <button id="add-btn">Add Task</button>
+  <ul id="task-list"></ul>
+
+  <script src="dom.js"></script>
+</body>
+</html>
