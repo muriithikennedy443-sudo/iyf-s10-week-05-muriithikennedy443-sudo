@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 10.4 - Form Handling</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; }
+    form { max-width: 400px; }
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+    input.error { border-color: red; }
+    input.success { border-color: green; }
+    .error-msg {
+      color: red;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .success-msg {
+      color: green;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Contact Form</h2>
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your name" name="name">
+    <input type="email" id="email" placeholder="Your email" name="email">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="dom.js"></script>
+</body>
+</html>
