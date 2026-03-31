@@ -28,7 +28,7 @@ document.querySelector("#task-list").addEventListener("click", (event) => {
     handleClick(event);
   }
 
-  // Check for a class
+  // Or check for a class
   if (event.target.classList.contains("nav-link")) {
     handleClick(event);
   }
