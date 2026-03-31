@@ -40,6 +40,3 @@ A comprehensive collection of DOM manipulation exercises and projects built duri
 - Understanding the difference between textContent and innerHTML and when to use each safely
 - Getting event delegation right so that dynamically added elements also respond to clicks
 - Managing state (the todos array) and keeping the UI in sync with it on every change
-
-## Live Demo 
-[View Live Demo](https://muriithikennedy443-sudo.github.io/dom-manipulation)
